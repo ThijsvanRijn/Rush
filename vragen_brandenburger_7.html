@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rush</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <script src="https://use.fontawesome.com/d8214996ff.js"></script>
+ <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="manifest" href="manifest.json"></head>
+<body>
+  <div class="container-fluid">
+    <div class="mobile">
+      <div class="menu_bar_quiz">
+        <a href="start.html" class="fa fa-chevron-left fa-3x" aria-hidden="true"></a>
+      </div>
+      <div class="vragen_kader">
+        <p class="vragen_uitgebreid">	Waarop was de poort baseert? </p>
+      </div>
+      <div class="align_count">
+        <div id="countquestion"></div>
+      </div>
+      <div class="spacing_quiz">
+        <button class="quiz_knop" onclick="wrongButton($(this), 'popup_2_brandenburger_8.html')">
+              <p class="p_quiz_knop"> De Spanjaarden </p>
+        </button>
+         <button class="quiz_knop" onclick="wrongButton($(this), 'popup_2_brandenburger_8.html')">
+              <p class="p_quiz_knop"> De Acropolis </p>
+        </button>
+         <button class="quiz_knop" onclick="rightButton($(this), 'popup_2_brandenburger_8.html')">
+              <p class="p_quiz_knop"> De Propyleeën </p>
+        </button>
+         <button class="quiz_knop" onclick="wrongButton($(this), 'popup_2_brandenburger_8.html')">
+              <p class="p_quiz_knop">  De Fransen </p>
+        </button>
+      </div>
+     </div>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script>counter($('#countquestion'), 20, 'popup_2_brandenburger_8.html');</script>
+</body>
+</html>
